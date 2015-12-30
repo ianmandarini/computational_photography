@@ -1,0 +1,73 @@
+================================================================================
+
+ University of California, Berkeley
+ CS194-26 (CS294-26): Computational Photography
+
+================================================================================
+
+ Project 7 - Part A: "Image Warping and Mosaicing - Homographies"
+
+ Student: Ian Albuquerque Raymundo da Silva
+ Email: ian.albuquerque@berkeley.edu
+
+================================================================================
+
+ Special thanks to Alexei Alyosha Efros, Rachel Albert and Weilun Sun for help
+ during lectures, office hours and questions on Piazza.
+
+================================================================================
+
+
+================================================================================
+ Files and Folders:
+================================================================================
+
+ 	main.py
+ 		Runs the interactive application for merging the images into a panorama.
+ 		Imports imageio.py, pointselecter.py, transforms.py. Reads the inputs
+ 		from the corresponding folders in "inputs".
+
+ 	imageio.py
+ 		Python code for reading images and converting them to floats.
+
+ 	pointselecter.py
+ 		Python code for the interface that helps the user to select the input
+ 		points for the algorithms to work.
+
+ 	transforms.py
+ 		Python code for computing transformations given correspondence points.
+
+ 	/inputs
+ 		Contains the input images for the panorama mosaicing.
+
+ 		/360
+ 			Input images for the 360 degrees cylindrical panorama algorithm.
+
+ 			0.jpg
+ 			1.jpg
+ 			2.jpg
+ 			3.jpg
+ 			4.jpg
+ 			5.jpg
+ 			6.jpg
+
+ 		/cylindrical
+ 			Input images for the cylindrical panorama algorithm.
+
+ 			0.jpg
+ 			1.jpg
+ 			2.jpg
+
+ 		/planar
+ 			Input images for the planar panorama algorithm.
+
+ 			0.jpg
+ 			1.jpg
+ 			2.jpg
+
+ 		/rectification
+ 			Input images for the rectification algorithm.
+
+ 			times_square.jpg
+
+================================================================================

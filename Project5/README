@@ -1,0 +1,68 @@
+================================================================================
+
+ University of California, Berkeley
+ CS194-26 (CS294-26): Computational Photography"
+
+================================================================================
+
+ Project 5: "Face Morphing"
+
+ Student: Ian Albuquerque Raymundo da Silva"
+ Email: ian.albuquerque@berkeley.edu
+
+================================================================================
+
+ Special thanks to Alexei Alyosha Efros, Rachel Albert and Weilun Sun for help
+ during lectures, office hours and questions on Piazza.
+
+================================================================================
+
+================================================================================
+ Files and Folders:
+================================================================================
+
+ 	main.py
+ 		The main code for the problem. Calculate 10 frames for the morphing of
+ 		obama.jpg into dilma.jpg
+
+ 	dilma.jpg
+ 		One of the input files for the morphing.
+
+ 	obama.jpg
+ 		One of the input files for the morphing.
+
+ 	obilma.pts
+ 		The file that stores the points in both images. It has a preset set of
+ 		points included here.
+
+ 	other_codes
+ 		This folder contains some other pieces of code used for the other parts
+ 		of the project. The main part of the code is included in main.py. Here,
+ 		the only difference is the use of different input methods (because those
+ 		code use multiple images as input)
+
+ 		IMPORTANT: Those codes should not be running because of the lack of
+ 		appropriate input, not provided. They are also not refactored.
+ 		They are here just because they were used for the final presentation.
+
+ 		avg.py
+ 			The code for the population averaging. Not refactored.
+
+ 		face_move.py
+ 			The code for the face animation. Not refactored.
+
+ 		
+================================================================================
+
+================================================================================
+ Instructions:
+================================================================================
+
+	Execute main.py.
+	Choose to use preset points or not.
+	Add new points to the images.
+	Press SPACE to finish point selection.
+	Choose if you want to save the new set of points or not.
+	Watch the results of the morphing.
+
+================================================================================

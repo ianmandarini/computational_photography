@@ -1,0 +1,150 @@
+================================================================================
+
+ University of California, Berkeley
+ CS194-26 (CS294-26): Computational Photography
+
+================================================================================
+
+ Project 6: "Lightfield Camera"
+
+ Student: Ian Albuquerque Raymundo da Silva
+ Email: ian.albuquerque@berkeley.edu
+
+================================================================================
+
+ Special thanks to Alexei Alyosha Efros, Rachel Albert and Weilun Sun for help
+ during lectures, office hours and questions on Piazza.
+
+================================================================================
+
+
+================================================================================
+ Files and Folders:
+================================================================================
+
+ 	main.py
+ 		Runs the interactive application for selecting and viewing the
+ 		lightfield with different focusing points and apperture sizes
+
+================================================================================
+
+
+================================================================================
+
+	ALL THE VARIABLES ARE SET FOR THE "CHESS BOARD" SET OF IMAGES
+	JUST MAKE SURE YOU SET UP THE INPUT PATH
+
+================================================================================
+
+
+================================================================================
+ << IMPORTANT >> Setting up the Input Files:
+================================================================================
+
+	For the application to work, it is necessary to set up the input folder
+	for the lightfield.
+
+	-----------------------
+	To do this, follow those instructions:
+	-----------------------
+
+	1. Open and edit the file main.py
+	2. Locate variable INPUT_FOLDER_PATH on line 32 
+		(it is the first non commented line of code)
+	3. Change its value to a string containing the path to the folder containing
+		the lightfield images
+
+		----------------------------------------------------------------------
+		** IMPORTANT NOTE 
+		----------------------------------------------------------------------
+
+			The program looks for images with names that match the following:
+
+				out_yy_xx_*
+
+				where yy are the two digits for the y position (vertical) of the image in the grid
+				and xx are the two digits for the x position (horizontal) of the image in the grid
+				and * is anything else
+
+		----------------------------------------------------------------------
+
+
+	4. Locate variables GRID_SIZE_X and GRID_SIZE_Y on lines 41 and 42
+		(they are just after the variable INPUT_FOLDER_PATH)
+	5. Change their value to the horizontal and vertical (x and y) sizes of
+		the grid that composes the input lightfield
+	6. Save the file main.py
+
+	-----------------------
+
+	Now you should be able to run the application properly :)
+
+	-----------------------
+
+	YOU MIGHT WANT TO CHANGE THE TWEAKING CONSTANTS OF THE CODE:
+
+		If the code does not work fast enough or does not align very well,
+		it is possible to change some constants. They are all located
+		in the beggining of the file main.py The constants that you
+		may consider to alter are:
+
+		WINDOW_SIZE
+			The size of the square patches used for alignment.
+			The patches are squares with dimensions WINDOW_SIZE x WINDOW_SIZE
+			This should be large enough to cover the possible features of the images.
+			If you experience wrong alignments, increase this.
+
+		MAX_LAYER
+			The number of layers on the gaussian pyramids.
+			If the program is just using too much memory, decrease this.
+			However, decreasing this alters how responsive the application feels
+			and may increase the chance of not finding good alignments.
+
+		SEARCH_WINDOW_CTE
+			The search window for displacements.
+			Decrease this for faster alignments.
+			Decreasing this may result in wrong alignments.
+
+		STARTING_RADIUS
+			The starting aperture radius.
+			Larger radius take more time to calculate.
+			Be careful - set the starting radius to something small.
+
+================================================================================
+
+
+================================================================================
+ Running the Application:
+================================================================================
+
+	Run the application (main.py).
+
+	It should load all the input images and also calculate their gaussian
+	pyramids (this is the preprocessing part). This is expected to take
+	some time and use a lot of memory.
+
+	When the image is displayed, you can:
+
+		LEFT MOUSE CLICK:
+			Refocuses the image on the point clicked
+
+		SCROLL THE MOUSE WHEEL UP:
+			Increases the aperture radius/size
+
+		SCROLL THE MOUSE WHEEL DOWN:
+			Decreases the aperture radius/size
+
+	Everytime you take an action, it takes some time to computer everything.
+	During that time, no new actions can be made. However, it should not
+	take much time.
+
+	The thing that takes the most time is increasing the aperture radius too much.
+
+	Whenever the image finishes loading, you can just repeat this process again.
+
+	NOTE:
+		I have experienced Windows saying that this program does not respond
+		when it is calculating images with high aperture radius.
+		Well, just wait for the computation to complete. It is not stuck.
+
+================================================================================

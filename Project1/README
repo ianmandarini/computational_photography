@@ -1,0 +1,75 @@
+================================================================================
+ University of California, Berkeley
+ CS194-26 (CS294-26): Computational Photography"
+
+================================================================================
+
+ Project 1: Images of the Russian Empire"
+
+ Student: Ian Albuquerque Raymundo da Silva"
+ Email: ian.albuquerque@berkeley.edu
+
+----------------------------------------------------------
+ Reference used for creating the code:
+
+	 CS194-26 (CS294-26) - Project 1 Starter Python code - Provided with the Assignment
+	 Avaiable on: http://inst.eecs.berkeley.edu/~cs194-26/fa15/hw/proj1/data/colorize_skel.py
+
+	 "A crash course on NumPy for images"
+	 Avaiable on: http://scikit-image.org/docs/dev/user_guide/numpy_images.html
+
+	 "Image manipulation and processing using Numpy and Scipy"
+	 Avaiable on: https://scipy-lectures.github.io/advanced/image_processing/
+
+	 "Build image pyramids"
+	 Avaiable on: http://scikit-image.org/docs/dev/auto_examples/plot_pyramid.html
+
+	 "Module: Transform"
+	 Avaiable on: http://scikit-image.org/docs/dev/api/skimage.transform.html
+
+----------------------------------------------------------
+
+ Special thanks to Alexei Alyosha Efros, Rachel Albert and Weilun Sun for help
+ during lectures, office hours and questions on Piazza.
+
+================================================================================
+
+
+
+================================================================================
+Files and Folders:
+================================================================================
+
+	main.py
+		This file contains the image pyramid implementation for the aligning algorithm.
+		
+		Running this file will result in running the aligning algorithm on the file 
+		'emir.tif' located on '../data/emir.tif'. Running this algorithm might take 
+		a while (one to two minutes). The program itself does not receive any parameters
+		
+		This code only displays the final result. It does not save it anywhere.
+
+
+	other_codes/
+		This folder contains some other codes used for comparing results and creating
+		the web page for the presentation of this project.
+
+		Important: Run programs in this folder using this folder as current directory (in order 
+		for them to find the correct path to the images).
+
+			non_aligned.py
+				This code displays the version of the image 'emir.tif' located on '../data/emir.tif'
+				WITHOUT ANY alignment (only the stacking).
+				It is very useful for comparing with the results of the other programs
+
+			pyramid_levels.py
+				This code diplays every level of the pyramid of all the three red, green
+				and blue images. It is useful for understanding how the pyramid works
+
+			single_scale.py
+				This code does the alignment of the image 'cathedral.jpg' located on '../data/cathedral.jpg'.
+				Runnign this on larger images will result in bad alignments.
+				This consists on an early version of the final code.
+
+
+================================================================================

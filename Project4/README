@@ -1,0 +1,80 @@
+================================================================================
+
+ University of California, Berkeley
+ CS194-26 (CS294-26): Computational Photography
+
+================================================================================
+
+ Project 4: "Seam Carving"
+
+ Student: Ian Albuquerque Raymundo da Silva
+ Email: ian.albuquerque@berkeley.edu
+
+================================================================================
+
+ Special thanks to Alexei Alyosha Efros, Rachel Albert and Weilun Sun for help
+ during lectures, office hours and questions on Piazza.
+
+================================================================================
+
+================================================================================
+ Files and Folders:
+================================================================================
+
+ 	main.py
+ 		Asks the user if they want to use the precompute function or the online
+		function. Acts as the user interface.
+
+	seam_carving.py
+		This file contains all the necessary functions for the preprocessing and the
+		online parts of the assignment. This is the heart of the project.
+
+	precompute.py
+		Opens the image and energy mask and calculates the order of importance of each
+		pixel in both horizontal and vertical deletions. Saves the ".ord" file.
+
+	online.py
+		Asks the user which operation will be performed on the image and computes
+		that operation. Reads an ".ord" file
+
+	-----------------------------------------------------------------------------
+
+	botinas.jpg
+		The input image file.
+
+	botinas.ord
+		A pixel order file has been included in case the precomputing module takes
+		a lot of time to compute. This file is written by the precomputing module
+		and read by the online module.
+
+	botinas_mask.jpg
+		A sample energy mask that can be used for feature deletion.
+
+================================================================================
+
+
+================================================================================
+ Instructions:
+================================================================================
+
+	When executing main.py you will be prompted to choose between the options of
+	the precomputation and the online function. In order to use the online function,
+	first you need to choose the precomputation option.
+
+	Running the precomputation option will create in the same directory a ".ord"
+	file. This file contains the information of the order of deletion for each
+	pixel in the image. This ".ord" file will be used as part of the input for
+	the online function.
+
+	-----------------------------------------------------------------------------
+
+	A pixel order file (".ord") has been included in case the precomputing module takes
+	a lot of time to compute. This file is written by the precomputing module
+	and read by the online module.
+
+	-----------------------------------------------------------------------------
+
+	In order to input an energy mask (for feature removing), it is necessary to 
+	change constants in main.py. A sample mask is provided.
+
+================================================================================

@@ -1,0 +1,53 @@
+================================================================================
+
+ University of California, Berkeley
+ CS194-26 (CS294-26): Computational Photography"
+
+================================================================================
+
+ Final Project: "Video Matching"
+
+ Student: Ian Albuquerque Raymundo da Silva"
+ Email: ian.albuquerque@berkeley.edu
+
+================================================================================
+
+ Special thanks to Alexei Alyosha Efros, Rachel Albert and Weilun Sun for help
+ during lectures, office hours and questions on Piazza.
+
+================================================================================
+
+================================================================================
+ Files and Folders:
+================================================================================
+
+ 	main.py
+ 		The main code for the aaplication.
+
+ 	harris.py
+ 		Useful functions for the harris interest points detector.
+ 		This is a modified version from the provided for the project 7b.
+
+ 	ref.mp4
+ 		Reference video for the video matching.
+
+ 	tar.mp4
+ 		Target video for the video matching.
+
+ 		
+================================================================================
+
+================================================================================
+ Parameters for the Specific Inputs Provided:
+================================================================================
+
+	Good choice of parametes:
+
+	N = 2
+	sigma = 0.1
+	LMR = 5
+	alpha = 0.995
+	tolerance = 5
+	p = 0.7
+
+================================================================================

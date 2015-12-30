@@ -1,0 +1,109 @@
+================================================================================
+ University of California, Berkeley
+ CS194-26 (CS294-26): Computational Photography
+
+================================================================================
+
+ Project 3: "Fun with Frequencies"
+
+ Student: Ian Albuquerque Raymundo da Silva
+ Email: ian.albuquerque@berkeley.edu
+
+================================================================================
+
+ Special thanks to Alexei Alyosha Efros, Rachel Albert and Weilun Sun for help
+ during lectures, office hours and questions on Piazza.
+
+================================================================================
+
+
+================================================================================
+Files and Folders:
+================================================================================
+
+	part0/
+		Folder containing part 0 of the project (sharpening with high pass filters)
+
+			cat.jpg
+				Sample image for the part 0. This image will be used as input 
+				for the sharpening.
+
+			main.py
+				The main code for part 0. Will execute the sharpening algorithm
+				on the image "cat.jpg"
+
+	part1/
+		Folder containing part 1 of the project (hybrid images)
+
+			aligned_mona.jpg
+				The aligned version of "mona.jpg". This file
+				is used as input for "fourier.jpg", that shows the Fourier Transform
+				of this image.
+
+			aligned_venus.jpg
+				The aligned version of "venus.jpg". This file
+				is used as input for "fourier.jpg", that shows the Fourier Transform
+				of this image.
+
+			align_image_code.jpg
+				An auxiliary library that aligns two image, given two points in each
+				image as reference. Included in "color.py" and "gray.py"
+
+			color.py
+				The file that contains the code for creating the hybrid images with
+				colors. It uses "venus.jpg" and "mona.jpg" to create a hybrid
+				version of them: the vemona.
+
+			fourier.py
+				The file that contains the code for showing the Fourier Transform of
+				given images. It uses "aligned_mona.jpg", "aligned_venus.jpg" and
+				"vemona.jpg" to create their fourier transforms.
+
+			gray.py
+				The file that contains the code for creating the hybrid images in grayscale.
+				It uses "venus.jpg" and "mona.jpg" to create a hybrid version of them:
+				the vemona.
+
+			main.py
+				The main code for part 1. Will execute the code in the files
+				"gray.py", "color.py" and "fourier.py".
+
+			mona.jpg
+				One of the two inputs for the hybrid image.
+
+			vemona.jpg
+				The result of the blending of mona.jpg and venus.jpg. This file
+				is used as input for "fourier.jpg", that shows the Fourier Transform
+				of this image.
+
+			venus.jpg
+				One of the two inputs for the hybrid image.
+
+	part2/
+		Folder containing part 2 of the project (stacks)
+
+		main.py
+			The main code for part 2. Will create the Gaussian and Laplacian stacks for
+			the image "vemona.jpg"
+
+		vemona.jpg
+			The input image for this part of the project.
+
+	part3/
+		Folder containing part 3 of the project (blending)
+
+		lion.jpg
+			One of the two inputs for the image blending.
+
+		main.py
+			The main code for part 3. Will create a blended version of
+			the files "lion.jpg" and "mico.jpg" by using "milion_mask.jpg"
+			as mask.
+
+		mico.jpg
+			One of the two inputs for the image blending.
+
+		milion_mask.jpg
+			The mask that will be used for the blending.
+
+================================================================================
